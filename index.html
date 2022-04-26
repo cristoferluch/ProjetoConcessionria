@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Projeto Concessionária</title>
+	<link rel="stylesheet" type="text/css" href="./styles.css">
+</head>
+<body>
+	<header>
+		<div class="cabecalho">
+			<div class="logo">
+				<img src="./img/logo.png">
+			</div>
+			<nav class="menu">
+				<ul>
+					<li><a href="./index.html">Inicio</a></li>
+					<li><a href="#">Sobre</a></li>
+					<li><a href="./cadastrar.html">Contato</a></li>
+				</ul>
+			</nav>	
+			<div class="socialMedia">
+				<a href="http://www.facebook.com" target="_blank"><img src="./redeSocial/facebook.png"></a>
+				<a href="" target="_blank"><img src="./redeSocial/instagram.png"></a>
+				<a href="https://wa.me/5547996715450?text=Ol%C3%A1%2C%20acessei%20o%20site%20da%20loja%2C%20gostaria%20de%20saber%20mais%20detalhes" target="_blank"><img src="./redeSocial/whatsapp.png"></a>
+			</div>
+		</div>
+	</header>
+
+	<main>
+
+		<div class="formulario">
+			<div class="pesquisarCarro">
+				<input type="text" name="" class="filtros" placeholder="Fiat" id="campoPesquisa">
+				<input type="button" name="" class="filtros" value="Procurar" id="btcPesquisar" onclick="pesquisarCarro()">		
+			</div>
+				<div class="marca">
+					<select class="filtros" id="filterBrand" onchange="filterByBrand()">
+					<option value="marca" selected="true" disabled="disabled">Marcas</option>
+					<option value="CHEVROLET">Chevrolet</option>
+					<option value="VOLVO">Volvo</option>
+					<option value="FIAT">Fiat</option>
+					<option value="VOLKSWAGEN">Volkswagen</option>
+					<option value="RENAULT">Renault</option>
+					<option value="HYUNDAI">Hyundai</option>
+					<option value="AUDI">Audi</option>
+					<option value="BMW">BMW</option>
+					<option value="TROLLER">TROLLER</option>
+				</select>
+				<select class="filtros" id="mySelect" onchange="filterByPrice()">
+					<option value="marca" selected="true" disabled="disabled">Ordenar</option>
+					<option value="lastYear">ANO MAIS NOVO</option>
+					<option value="hightPrice">MAIOR PRECO</option>
+					<option value="lowPrice">MENOR PRECO</option>
+					<option value="lowKM">MENOR KM</option>
+				</select>
+			</div>	
+
+		</div>
+			<div class="resultado"></div>
+			
+		<div id="content">	
+		</div>
+	</main>
+
+	<footer>
+		<div class="rodape">
+			<p>&copy; Cristofer Luchtenberg</p>
+		</div>
+	</footer>
+
+	<script src="./scripts.js"></script>
+</body>
+</html>

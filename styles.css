@@ -1,0 +1,330 @@
+
+* {
+	padding: 0;
+	margin: 0;
+	font-family: 'Roboto', sans-serif;
+	box-sizing: border-box;
+}
+
+html{
+	height: 100%;
+}
+
+body{
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+	background-color: #e6e6e6;
+}
+
+main{
+	flex: 1;
+}
+
+.logo img{
+	width: 130px;
+	margin-left: 10px;
+}
+
+.socialMedia img{
+	width: 30px;
+}
+
+.formulario{
+	width: 100%;
+	padding:0 40px 0 40px;
+	margin-top: 40px;
+}
+
+main .formulario{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+
+.filtros{
+	border: 1px solid black;
+	padding: 12px;
+	margin: 0 5px 0 5px;
+	border-radius: 15px;
+	height: 45px;
+	font-size: 18px;
+	background-color: white;
+	width: 150px;
+	min-width: 150px;
+}
+
+main #content{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex: 1;
+}
+
+main .resultado{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+
+.resultado{
+	margin-top: 10px;
+	width: 100%;
+	height: 20px;
+}
+
+#btcReset{
+	padding: 5px;
+	margin: 5px;
+}
+
+.cabecalho{
+	width: 100%;
+	background-color: #2E3640;
+	height: 80px;
+	color: white;
+}
+
+.cabecalho, .menu{
+	display: flex;
+	align-items: center;
+}
+
+#campoPesquisa{
+	width: 150px;
+}
+
+select{
+	width: 150px;
+	background-color: white;
+	height: 100%;
+}
+
+#btcPesquisar{
+	max-width: 150px;
+	width: 150px;
+	font-weight: lighter;
+	background-color: #2E3640;
+	color: white;	
+	border: 0;
+	height: 100%;
+
+}
+
+#btcPesquisar:hover{
+	background-color: #5EA4BF;
+}
+
+ul{
+	max-width: 800px;
+	list-style: none;
+	padding: 0;
+}
+
+.menu, ul, li, a{
+	color: #FFF;
+	padding: 10px;
+	display: inline-block;
+	text-decoration: none;
+	transition: background .4s;
+}
+
+.menu li:hover{
+	background-color: #5EA4BF;
+}
+
+.menu ul{
+	list-style: none;
+	padding: 0;
+}
+
+#content{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	padding: 20px;
+	float: left;
+	align-self: flex-start;
+}
+
+
+
+.vitrine{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.car{
+	width: 290px;
+	height: 420px;
+	border: 1px solid black;
+	margin: 20px;
+	border-radius: 10px;
+	overflow: visible;
+	background-color: white;
+	box-shadow: 0 0 0.4em black;
+	transition: .3s;
+}
+
+.car:hover{
+	box-shadow: 0 0 1em black;
+	transform: scale(1.04w);
+}
+
+.imgCar{
+	border: 1px solid black;
+	width: 288px;
+	height: 200px;
+	border-width: 0 0 1px 0;
+	border-radius: 9px 9px 0 0;
+	overflow: hidden;
+}
+
+
+.img{
+	min-width:100%;
+	max-height:100%;
+	object-fit: cover;
+}
+
+.carName{
+	font-size: 1em;
+	padding: 10px 10px 10px 10px;
+	text-transform: uppercase;
+}
+
+.carInformation{
+	font-size: 0.9em;
+	float: left;
+	padding: 0 10px 0 10px;
+	height: 125px;
+}
+
+.carInf{
+	font-weight: 500;
+}
+
+.carPrice{
+	font-size: 1.7em;
+	padding: 10px 10px 10px 0;
+}
+
+.carKm{
+	display: flex;
+	align-content: center;
+	justify-content: center;
+}
+
+.km{
+	float: right;
+	padding: 3px;
+	color: #8b8c99;
+}
+
+.date{
+	float: left;
+	padding: 3px;
+	color: #8b8c99;
+}
+
+.carRodape{
+	width: 100%;
+	height: 22px;
+	border: 1px solid black;
+	border-width: 1px 0 0 0;
+	color: #696977;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.carRodape{
+	bottom: 0;
+}
+
+.cidade{
+	font-size: 0.9em;
+}
+
+.rodape{
+	width: 100%;
+	background-color: #2E3640;
+	height: 80px;
+	color: white;
+}
+
+.rodape, p{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+
+@media only screen and (max-width: 770px){
+
+
+	main .formulario{
+		display: inline-block;
+	}
+	
+	.pesquisarCarro{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+	}
+
+	.marca{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-top: 10px;
+	}
+
+}
+
+@media only screen and (max-width: 600px){
+
+	ul{
+		max-width: 480px;
+	}
+
+	.menu, ul, li, a{
+		padding: 0.4em;
+	}
+
+	.cabecalho{
+		height: 170px;
+	}
+
+	.cabecalho{
+		display: inline-block;
+	}
+
+	.logo{
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.logo img{
+		width: 150px;
+		margin: 10px;
+	}
+
+	.menu, .socialMedia{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	
+}
+
